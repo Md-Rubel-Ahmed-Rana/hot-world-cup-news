@@ -23,16 +23,6 @@ body{
     transition: 0.7s;
 }
 
-/* Transition Added Here */
-.banner:hover .banner-logo{
-    background-image: url("..//images/ready-to-kick.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 40px;
-    height: 100%;
-    border-radius: 20px;
-}
 
 .banner-info{
     width: 40%;
@@ -62,7 +52,6 @@ body{
 }
 
 .banner-logo{
-    transition: 0.5s;
     width: 40%;
 }
 /* header or banner section style end here */
@@ -118,7 +107,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top:20px; */
     gap: 10px;
 }
 
@@ -185,13 +173,24 @@ footer > hr{
     font-size: 25px;
 }
 
+.social-icon{
+    padding: 20px;
+}
 .social-icon > a{
+    transition: 0.5s;
     text-decoration: none;
     color: white;
-}
-.social-icon > a > i{
-    font-size: 25px;
+    background-color: red;
+    padding: 10px;
     margin: 10px;
+    border-radius: 50%;
+
+}
+
+.social-icon > a:hover{
+    background-color: blue;
+    border-radius:50%;
+    padding: 10px;
 }
 /* footer section style end here */
 
@@ -265,9 +264,7 @@ footer > hr{
         display: flex;
         flex-direction: column;
     }
-    .banner:hover .banner-logo{
-        background-image: none;
-    }
+    
     .banner-info{
         height: 50%;
         text-align: center;
