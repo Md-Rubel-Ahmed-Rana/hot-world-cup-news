@@ -265,6 +265,9 @@ footer > hr{
         display: flex;
         flex-direction: column;
     }
+    .banner:hover .banner-logo{
+        background-image: none;
+    }
     .banner-info{
         height: 50%;
         text-align: center;
