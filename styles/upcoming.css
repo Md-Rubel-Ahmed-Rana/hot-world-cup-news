@@ -1,3 +1,6 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
 /* Universal style */
 body{
     margin: 0;
@@ -21,8 +24,42 @@ body{
     justify-content: space-between;
     align-items: center;
     transition: 0.7s;
+    font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
+/* Animation added on hover effect */
+.banner:hover .banner-logo img{
+    background-color: red;
+    border: 5px solid blue;
+    border-radius: 50%;
+    animation-name: img-circle;
+    animation-duration: 2s;
+    transition: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes  img-circle {
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+    25%{
+        background-color: black;
+        border-color: gold;
+    }
+    50%{
+        background-color: purple;
+        border-color: orchid;
+    }
+    100%{
+        width: 90%;
+        height: 90%;
+        background-color: blue;
+        border-color: red;
+    }
+}
 
 .banner-info{
     width: 40%;
@@ -84,7 +121,14 @@ body{
     width: 80%;
     margin: 0px auto;
     border-radius: 7px;
+    transition: 0.3s;
 }
+
+.side-bar a:hover{
+    background-color: red !important;
+    color: white;
+}
+
 .active{
     background-color: red !important;
     color: white;
@@ -151,6 +195,7 @@ footer{
     text-align: center;
     padding: 50px 0px;
     margin-top: 100px;
+    font-family: arial black;
 }
 
 footer > h1{
@@ -174,23 +219,35 @@ footer > hr{
 }
 
 .social-icon{
-    padding: 20px;
+    margin: 0px auto;
 }
-.social-icon > a{
-    transition: 0.5s;
-    text-decoration: none;
+.social-icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon > ul > li> a{
+    width: 50px;
+    height: 50px;
+    background-color: black;
     color: white;
-    background-color: red;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: 0.3s;
     padding: 10px;
     margin: 10px;
-    border-radius: 50%;
-
+}
+.social-icon > ul > li > a > i{
+    margin-top: 10px;
+    font-size: 30px;
 }
 
-.social-icon > a:hover{
+.social-icon > ul > li > a:hover{
     background-color: blue;
-    border-radius:50%;
-    padding: 10px;
 }
 /* footer section style end here */
 
