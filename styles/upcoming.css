@@ -3,11 +3,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    ;
 }
 .container{
     width: 80%;
     margin: 40px auto;
-    /* background-color: black; */
 }
 
 
@@ -20,6 +20,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.7s;
+}
+
+/* Transition Added Here */
+.banner:hover .banner-logo{
+    background-image: url("..//images/ready-to-kick.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    height: 100%;
 }
 
 .banner-info{
@@ -41,6 +52,7 @@ body{
    outline: none;
    padding: 10px;
    cursor: pointer;
+   transition: 0.5s;
 }
 
 .banner-info button:hover{
@@ -49,6 +61,7 @@ body{
 }
 
 .banner-logo{
+    transition: 0.5s;
     width: 40%;
 }
 /* header or banner section style end here */
@@ -152,8 +165,9 @@ footer{
 }
 
 footer > h1{
-    font-size: 40px;
+    font-size: 50px;
     color: white;
+    font-family: 'Dancing Script', cursive;
 }
 
 footer > hr{
@@ -185,7 +199,7 @@ footer > hr{
 /* Media Queries */
 
 /* Tablet View */
-@media screen and (min-width: 568px) and (max-width: 992px) {
+@media screen and (min-width: 568px) and (max-width: 992px) { */
     .banner-info h1{
         font-size: 35px;
      }
@@ -292,7 +306,7 @@ footer > hr{
     }
 
     .view-all-section{
-        display: block;
+        display: none;
     }
     .view-all{
         width: 150px;
